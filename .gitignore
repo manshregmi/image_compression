@@ -1,0 +1,139 @@
+# ==================================================================
+# .gitignore  —  compression_manish/
+# ==================================================================
+# The repo root is ~/compression_manish.
+# Everything below is relative to this directory.
+# ==================================================================
+
+# ------------------------------------------------------------------
+# Datasets — never commit
+# ------------------------------------------------------------------
+EF-LIC/kodak/
+EF-LIC/tecnick/
+EF-LIC/tecnick_flat/
+EF-LIC/cityscapes/
+EF-LIC/cityescape/
+EF-LIC/cityescape.zip
+
+# Loose dataset archives
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tgz
+*.7z
+*.rar
+
+# Any generic dataset folders (in case you add more later)
+datasets/
+data/
+*_dataset/
+*_datasets/
+
+# ------------------------------------------------------------------
+# Model checkpoints and weights
+# ------------------------------------------------------------------
+EF-LIC/ckpt/
+*.pth
+*.pth.tar
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.torchscript
+
+# YOLO / YOLOS weight files
+*.pt
+yolov8*.pt
+yolo11*.pt
+yolos*.pt
+
+# Hugging Face / Ultralytics caches
+.cache/
+huggingface/
+.cache/huggingface/
+
+# ------------------------------------------------------------------
+# Results / outputs / visualizations
+# ------------------------------------------------------------------
+EF-LIC/results/
+EF-LIC/results_all/
+EF-LIC/visualize/
+EF-LIC/visualize_kodak/
+EF-LIC/visualize_tecnick/
+EF-LIC/visualize_cityscapes/
+EF-LIC/compare_yolo/
+EF-LIC/compare_yolo_kodak/
+EF-LIC/compare_yolo_tecnick/
+EF-LIC/yolo_compare/
+EF-LIC/yolos_compare/
+
+# Result files anywhere in the tree
+*_results/
+*_results.txt
+*_per_image.csv
+*_summary.csv
+combined_summary.csv
+
+# ------------------------------------------------------------------
+# Python
+# ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# ------------------------------------------------------------------
+# Jupyter / notebooks
+# ------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb
+
+# ------------------------------------------------------------------
+# Editors / IDEs / OS
+# ------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------------
+# Logs and temp files
+# ------------------------------------------------------------------
+*.log
+logs/
+*.tmp
+tmp/
+temp/
